@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>psd-reader</title>
+	<link rel="icon" href="data:image/x-icon;base64,AA">
+	<link rel="stylesheet" href="style.css">
+	<script src="psd.js"></script>
+	<script defer src="script.js"></script>
+</head>
+
+<body>
+
+	<div class="Payload">
+		<label>
+			Виберіть PSD макет
+			<input type="file" accept=".psd" />
+		</label>
+	</div>
+
+	<p class="Name hidden"></p>
+
+	<div class="Renderer">
+
+		<div class="Renderer__ImageContainer"></div>
+		<svg class="Renderer__ImageContainer" xmlns="http://www.w3.org/2000/svg">
+			<image/>
+		</svg>
+		
+	</div>
+
+	<div class="Fonts hidden">
+
+		<div class="Fonts__MarkerContainer">
+			<div class="Fonts__MarkerGreen"></div>
+			<p> - Наявний шрифт</p>
+			<div class="Fonts__MarkerRed"></div>
+			<p> - Відсутній шрифт</p>
+			<label>
+				Виділити текст 
+				<input type="checkbox" checked>
+			</label>
+		</div>
+
+		<p class="Fonts__Description">Натисніть на назву шрифту, щоб завантажити новий або замінити наявний файл шрифту:</p>
+		<ul class="Fonts__List"></ul>
+
+	</div>
+
+	<ol class="InputList"></ol>
+
+</body>
+
+</html>
